@@ -122,7 +122,6 @@ model.fit(Xtrain, Ytrain)
 print("Classfication with AdaBoostClassifier rate:", model.score(Xtest, Ytest))
 
 
-
 '''
 
 threshold = 1
