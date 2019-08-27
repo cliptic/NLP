@@ -91,7 +91,39 @@ Ytest = Y[-100:,]
 
 model = LogisticRegression()
 model.fit(Xtrain, Ytrain)
-print("Classfication rate:", model.score(Xtest, Ytest))
+print("Classfication with Logistic regression rate:", model.score(Xtest, Ytest))
+
+from sklearn.neighbors import KNeighborsClassifier
+model = KNeighborsClassifier()
+model.fit(Xtrain, Ytrain)
+print("Classfication with K - nearest neighbor rate:", model.score(Xtest, Ytest))
+
+from sklearn.svm import SVC
+model = SVC()
+model.fit(Xtrain, Ytrain)
+print("Classfication with SVC rate:", model.score(Xtest, Ytest))
+
+from sklearn.gaussian_process import GaussianProcessClassifier
+model = GaussianProcessClassifier()
+model.fit(Xtrain, Ytrain)
+print("Classfication with GaussianProcessClassifier rate:", model.score(Xtest, Ytest))
+
+from sklearn.tree import DecisionTreeClassifier
+model = DecisionTreeClassifier()
+model.fit(Xtrain, Ytrain)
+print("Classfication with DecisionTreeClassifier rate:", model.score(Xtest, Ytest))
+
+from sklearn.ensemble import RandomForestClassifier, AdaBoostClassifier
+model = RandomForestClassifier()
+model.fit(Xtrain, Ytrain)
+print("Classfication with RandomForestClassifier rate:", model.score(Xtest, Ytest))
+model = AdaBoostClassifier()
+model.fit(Xtrain, Ytrain)
+print("Classfication with AdaBoostClassifier rate:", model.score(Xtest, Ytest))
+
+
+
+'''
 
 threshold = 1
 
@@ -104,4 +136,4 @@ for word, index in word_index_map.items():
 		n += 1
 print("A number of words with a threshold +-", threshold, "is:", n)
 
-
+'''
