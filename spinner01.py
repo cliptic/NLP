@@ -43,6 +43,23 @@ for i in text_data:
 				count_dictionary[i[count]] += 1
 		count += 1	
 
-print(triple_dictionary["money"])
-print(count_dictionary["money"])
+print(triple_dictionary["left"])
+print(count_dictionary["left"])
+
+probability_dict = {}
+for key in triple_dictionary.keys():
+	i = 0
+	for value in triple_dictionary[key]:
+		value.sort()
+		value = tuple(value)
+		if value not in probability_dict:
+			probability_dict[value] = {key:1}
+		else:
+			if key not in probability_dict[value].keys():
+				probability_dict[value][key] = 1
+			else:
+				probability_dict[value][key] += 1
+print (probability_dict[('the', 'the')])
+
+
 
