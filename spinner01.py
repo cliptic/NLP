@@ -49,21 +49,29 @@ print(count_dictionary["left"])
 # gives a dictionary with a tuple of two surrounding sorted words and a key, 
 # which is a nested dictionary that contains the possible middle word
 # and it's cuont in the corpus data
-
 probability_dict = {}
+tuple_count_dict = {}
 for key in triple_dictionary.keys():
-	i = 0
 	for value in triple_dictionary[key]:
 		value.sort()
 		value = tuple(value)
 		if value not in probability_dict:
 			probability_dict[value] = {key:1}
+			tuple_count_dict[value] = 1
 		else:
 			if key not in probability_dict[value].keys():
 				probability_dict[value][key] = 1
 			else:
 				probability_dict[value][key] += 1
-print (probability_dict[('the', 'the')])
+			tuple_count_dict[value] += 1
 
+print(probability_dict[('the', 'the')])
+print(tuple_count_dict[('the', 'the')])
 
+### Calculate probabilities
+for key in probability_dict.keys():
+	for value in probability_dict[key]:
+		probability_dict[key][value] = probability_dict[key][value] / tuple_count_dict[key]
 
+print(probability_dict[('the', 'the')])
+print(tuple_count_dict[('the', 'the')])
