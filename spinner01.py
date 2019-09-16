@@ -46,6 +46,10 @@ for i in text_data:
 print(triple_dictionary["left"])
 print(count_dictionary["left"])
 
+# gives a dictionary with a tuple of two surrounding sorted words and a key, 
+# which is a nested dictionary that contains the possible middle word
+# and it's cuont in the corpus data
+
 probability_dict = {}
 for key in triple_dictionary.keys():
 	i = 0
