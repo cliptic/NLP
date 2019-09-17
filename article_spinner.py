@@ -1,21 +1,11 @@
-# Very basic article spinner for NLP class, which can be found at:
-# https://deeplearningcourses.com/c/data-science-natural-language-processing-in-python
-# https://www.udemy.com/data-science-natural-language-processing-in-python
-
-# Author: http://lazyprogrammer.me
-
 # A very bad article spinner using trigrams.
 from __future__ import print_function, division
 from future.utils import iteritems
 from builtins import range
-# Note: you may need to update your version of future
-# sudo pip install -U future
-
 
 import nltk
 import random
 import numpy as np
-
 from bs4 import BeautifulSoup
 
 
