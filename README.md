@@ -10,7 +10,7 @@ Lemmatizing text and using BeautifulSoup to visualize the most common words used
 Using PCA and LSA to reduce dimensions of tokenized text vectors. PCA is used to sort book title keywords into a two-dimensional vector, which shows the keywords having two main axis - o containing social/historical keywords; other - scientific and data-driven.
 
 ### Article spinner
-Modifying articles with synnonims taking into account the two surrounding words. Creating dictionaries for each trigram and randomly selecting the middle word.
+Modifying articles with synnonims taking into account the two surrounding words. Creating dictionaries for each trigram and randomly selecting the middle word. Building probabilistic randomizers dictionaries.
 
 ### Packages for Python used:
 - Pandas
