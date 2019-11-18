@@ -6,8 +6,8 @@ Vectorizing text messages and training a multinomial Naive Bayes and AdaBoost cl
 ### Sentiment analysis
 Lemmatizing text and using BeautifulSoup to visualize the most common words used in positive and negative reviews. Training a Logistic Regression with a threshold of 0.5 to identify positive and negative reviews. Calculating and identifying the misclassified reviews.
 
-![](https://github.com/cliptic/nlp/blob/master/jpg/Figure_1.png){: width="220px"}
-![](https://github.com/cliptic/nlp/blob/master/jpg/Figure_2.png){: width="220px"}
+![](https://github.com/cliptic/nlp/blob/master/jpg/Figure_1.png | width=100)
+![](https://github.com/cliptic/nlp/blob/master/jpg/Figure_2.png) | width=100}
 
 ### Dimensionality reductions
 Using PCA and LSA to reduce dimensions of tokenized text vectors. PCA is used to sort book title keywords into a two-dimensional vector, which shows the keywords having two main axis - o containing social/historical keywords; other - scientific and data-driven.
